@@ -50,8 +50,8 @@ export function DiscoverSection({
         {isLoading
           ? "Gathering more penguins..."
           : nextCursor
-            ? "Scroll for more"
-            : "End of the ice floe"}
+            ? "Scroll for more..."
+            : "You've reached the end of the ice floe."}
       </div>
     </section>
   );

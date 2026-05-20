@@ -10,7 +10,7 @@ export function HeroSection({
   return (
     <header className="hero-panel">
       <div className="hero-copy">
-        <p className="eyebrow">Penglotte</p>
+        <p className="eyebrow">COPYRIGHT © GABE LYNCH</p>
         <h1>PENGLOTTE</h1>
         <p className="hero-text pt-2">The Best Penguin GIF App of ALL TIME!</p>
       </div>
