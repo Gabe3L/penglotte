@@ -28,7 +28,7 @@ export function GifModal({
         <div className="modal-actions">
           <div>
             <h3>{gif.title}</h3>
-            <p>Share it, save it, or just appreciate the penguin commitment.</p>
+            <p>Share it, save it, or just appreciate the cute penguins.</p>
           </div>
           <div className="button-stack">
             <button type="button" onClick={() => onShare(gif)}>

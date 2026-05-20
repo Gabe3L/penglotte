@@ -75,7 +75,7 @@ function App() {
           setError(
             fetchError instanceof Error
               ? fetchError.message
-              : "The penguin radar hit some rough weather.",
+              : "The penguins hit some rough weather.",
           );
         } finally {
           setIsLoading(false);
@@ -111,7 +111,7 @@ function App() {
               setError(
                 fetchError instanceof Error
                   ? fetchError.message
-                  : "The penguin radar hit some rough weather.",
+                  : "The penguins hit some rough weather.",
               );
             } finally {
               setIsLoading(false);
@@ -175,13 +175,13 @@ function App() {
         if (result.notice) {
           setNotice(result.notice);
         } else if (!result.incoming.length) {
-          setNotice("No exact hits yet, but the colony is still scouting.");
+          setNotice("The colony is scouting...");
         }
       } catch (fetchError) {
         setError(
           fetchError instanceof Error
             ? fetchError.message
-            : "The penguin radar hit some rough weather.",
+            : "The penguins hit some rough weather.",
         );
       } finally {
         setIsLoading(false);

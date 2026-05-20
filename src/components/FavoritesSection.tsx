@@ -18,8 +18,8 @@ export function FavoritesSection({
     <section className="feed-section">
       <div className="section-heading">
         <div>
-          <p className="mini-label">Saved stash</p>
-          <h2>Favorites that survive offline</h2>
+          <p className="mini-label">Saved Penguins</p>
+          <h2>Your Favorites:</h2>
         </div>
         <span className="status-chip">{favorites.length} saved</span>
       </div>
@@ -47,7 +47,7 @@ export function FavoritesSection({
       ) : (
         <div className="empty-state">
           <p>No favorites yet.</p>
-          <span>Save a few excellent penguins and they’ll wait here.</span>
+          <span>Save a couple cute penguins and they’ll hangout here.</span>
         </div>
       )}
     </section>

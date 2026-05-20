@@ -19,14 +19,14 @@ export function Controls({
     <section className="control-panel">
       <form className="search-form" onSubmit={onSubmit}>
         <label className="search-label" htmlFor="gif-search">
-          Search a vibe
+          Find your vibe as a penguin:
         </label>
         <div className="search-row">
           <input
             id="gif-search"
             value={inputValue}
             onChange={(event) => onInputChange(event.target.value)}
-            placeholder="dancing, sleepy, dramatic..."
+            placeholder="jumping, cozy, dramatic..."
             autoComplete="off"
           />
           <button type="submit">Find penguins</button>
