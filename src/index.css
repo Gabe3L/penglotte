@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top, rgba(234, 251, 255, 0.95), transparent 35%),
+    linear-gradient(180deg, #f6fdff 0%, #d7eef7 48%, #b7d9e7 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-display: "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+  --font-body: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", "Consolas", monospace;
+  --ink: #092f3f;
+  --muted: #4a6978;
+  --panel: rgba(241, 250, 253, 0.82);
+  --line: rgba(9, 47, 63, 0.12);
+  --line-strong: rgba(9, 47, 63, 0.2);
+  --accent-strong: #0f5f7f;
+  --shadow: 0 24px 60px rgba(12, 72, 97, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #d7eef7;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+}
+
+body,
+button,
+input {
+  font-family: var(--font-body);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 0.95;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2.35rem);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(30, 111, 147, 0.38);
+  outline-offset: 2px;
+}
+
+code {
+  font-family: var(--font-mono);
+  border-radius: 10px;
+  padding: 0.18rem 0.45rem;
+  background: rgba(10, 58, 79, 0.08);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
